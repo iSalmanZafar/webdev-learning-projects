@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(115deg, rgba(58,58,158,0.8), rgba(136,136,206,0.7)),
+     url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+    color : white;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+}
+
+.form{
+    background-color: rgba(27, 27, 50, 0.8);
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.form-group{
+    margin: 10px 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.label{
+    padding: 8px;
+    font-size: .9em;
+}
+
+.input{
+    height: 40px;
+    margin: 8px;
+    padding-left: 2px;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 140px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+button{
+    height: 40px;
+    background-color: #37af65;
+    color:white;
+    cursor: pointer;
+    border: 0;
+    font-size: 0.9em;
+    margin: 20px 0;
+    border-radius: 5px;;
+}
+
+.radio-button{
+    width: 18px;
+    height: 18px;
+}
+
+.user-recommend-options{
+    margin-bottom: 8px;
+    font-size: 0.8em;
+}
+
+option{
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 400px){
+    .form, .header{
+        width:80%;
+    }
+
+    body{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 810px){
+    .form, .header{
+        width:750px;
+    }
+
+    body{
+        font-size: 1.5em;
+    }
+}
+

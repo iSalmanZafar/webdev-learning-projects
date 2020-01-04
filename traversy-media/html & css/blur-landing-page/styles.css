@@ -1,0 +1,150 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase img {
+  width: 200px;
+}
+
+.showcase::after {
+  content: "";
+  background: url(https://image.ibb.co/gzOBup/showcase.jpg) no-repeat center
+    center/cover;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  filter: blur(10px);
+  z-index: -1;
+  transition: all 1000ms;
+}
+
+.showcase:hover::after {
+  filter: blur(0px);
+}
+
+.showcase .container {
+  position: absolute;
+  transition: all 1000ms;
+}
+
+.showcase:hover .container {
+  filter: blur(2px);
+}
+
+.services {
+  background: #111;
+}
+
+.services .container {
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+.services .container .col {
+  padding: 1rem;
+}
+
+.fa-3x {
+  padding: 0.8rem;
+}
+
+.services h3 {
+  padding: 0.8rem 0;
+}
+
+.about {
+  background: #fff;
+  color: #333;
+  padding: 2rem 0;
+}
+
+.about .container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .container .col {
+  width: 50%;
+}
+
+.left-align {
+  text-align: left !important;
+}
+
+footer p {
+  padding: 2rem 0;
+}
+
+@media (max-width: 640px) {
+  .showcase {
+    height: 50vh;
+  }
+  .showcase img {
+    width: 125px;
+  }
+
+  .showcase h1 {
+    font-size: 1.25rem;
+  }
+
+  .services .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about .container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about .container .col {
+    width: 90%;
+    padding: 1rem 0;
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media (max-height: 480px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  .showcase img {
+    width: 125px;
+  }
+
+  .showcase h1 {
+    font-size: 1.25rem;
+  }
+}

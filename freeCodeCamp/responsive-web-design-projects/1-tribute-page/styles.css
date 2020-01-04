@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+}
+
+#img-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: white;
+}
+
+#image{
+    max-width: 100%;
+}
+
+#tribute-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+#tribute-headline{
+    align-self: center;
+}
+
+ul{
+    flex: 0 0 100%;
+    align-self: center;
+}

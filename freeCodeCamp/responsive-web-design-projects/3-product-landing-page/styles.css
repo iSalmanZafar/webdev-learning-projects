@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+.fas{
+    font-size: 3em;
+    color: orange;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#header{
+    width:100%;
+    position: fixed;
+    background: orange;
+    padding: 0;
+    margin: 0;
+    top:0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logo{
+    width: 100%;
+}
+
+#header-img{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 25px 0 0;
+}
+
+#nav-bar{
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+}
+
+.nav-links li{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.subscription{
+    margin-top: 160px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subscription h2{
+    text-align: center;
+}
+
+#form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+#email{
+    width: 80%;
+    flex: 0 0 35px;
+}
+#submit{
+    margin-top: 15px;
+    background-color: orange;
+    border:0;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    flex: 0 0 35px;
+}
+
+.fas{
+    display: none;
+}
+
+#features{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#features h2{
+    margin-bottom: 0px;
+}
+#features p{
+    margin-top: 0px;
+    padding: 4px;
+}
+
+#video{
+    margin-bottom: 50px;
+}
+
+.price-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.price{
+    border: 1px solid;
+    text-align: center;
+    flex: 0 0 90%;
+    height: 280px;
+    margin-bottom: 20px;
+}
+.price h3{
+    margin: 0px;
+    padding: 20px;
+    background: #DDDDDD;
+}
+.price h2{
+    margin: 10px 0px;
+}
+.price button{
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    color : white;
+    margin: 10px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+footer ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer ul li{
+    margin: 10px 15px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 480px){
+    .nav-links{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        padding: 0;
+    }
+
+    .logo{
+        width: 460px;
+        align-self: center;
+    }
+
+    .fas{
+        display: inline-block;
+    }
+
+    #features{
+        text-align: left;
+        width: 70%;
+    }
+
+    .feature-section{
+        display: flex;
+    }
+    .feature-section i{
+        flex: 0 0 30%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .feature-section div{
+        flex: 0 0 70%;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    #header{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .logo{
+        flex: 0 0 400px;
+    }
+
+    #nav-bar{
+        flex: 0 0 40%;
+    }
+    .fas{
+        display: inline-block;
+    }
+
+    .price{
+        flex: 0 0 30%;
+    }
+}

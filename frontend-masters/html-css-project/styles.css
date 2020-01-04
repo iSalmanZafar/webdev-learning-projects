@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+.news-section{
+    border: solid 1px;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+.quarter{
+    width: 25%;
+}
+
+.half{
+    width: 50%;
+}
+
+.three-quarter{
+    width: 75%;
+    padding: 0;
+}
+
+.story-title{
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.news-category{
+    padding: 10px;
+    height: 20%;
+}
+
+.category-link{
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-link:hover{
+    text-decoration: underline;
+}
+
+.category-section{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.politics{background-color: #FFEAA7;}
+.technology{background-color: #81ECEC;}
+.local{background-color: #55EFC4;}
+.opinion{background-color: #74B9FF;}
+.sports{background-color: #A29BFE;}
