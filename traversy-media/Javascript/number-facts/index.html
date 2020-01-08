@@ -20,17 +20,58 @@
             Number Facts
           </h1>
           <form class="form">
-            <div class="form-group">
-              <label for="number" class="text-light"
-                >Enter a number, get a random fact</label
-              >
-              <input
-                type="number"
-                name="number"
-                id="number"
-                class="form-control"
-                placeholder="Enter a number"
-              />
+            <div class="form-row">
+              <div class="form-group col-8">
+                <label id="number-label" for="number" class="text-light"
+                  >Enter a number, get a random fact</label
+                >
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  class="form-control"
+                  placeholder="Enter a number"
+                />
+
+                <div id="date-container" class="form-row">
+                  <div class="form-group col">
+                    <input
+                      type="number"
+                      name="month"
+                      id="month"
+                      min="1"
+                      max="12"
+                      class="form-control"
+                      placeholder="Month"
+                    />
+                  </div>
+                  <div class="form-group col">
+                    <input
+                      type="number"
+                      name="day"
+                      id="day"
+                      class="form-control"
+                      min="1"
+                      max="31"
+                      placeholder="Day"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group col-4">
+                <label for="number" class="text-light">Type</label>
+                <select
+                  name="type-selector"
+                  id="fact-type-selector"
+                  class="form-control"
+                >
+                  <option value="trivia">Trivia</option>
+                  <option value="math">Math</option>
+                  <option value="year">Year</option>
+                  <option value="date">Date</option>
+                </select>
+              </div>
             </div>
           </form>
           <div id="output-container">
